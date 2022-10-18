@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Minimal Chic</title>
+
+    <link href="bootstrap-grid.css" rel="stylesheet" />
+    <link href="projekt-lh%.css" rel="stylesheet" />
+    <link rel="icon" href="img/mc.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <section class="pozadinaLogo">
+        <div class="wrapper">
+            <div class="logoCentriran"><a href="projekt.html"><img src="img/mc.png" class="logo" alt="Minimal Chic logo" /></a></div>
+        </div>     
+    </section>
+
+    <section>
+        <div class="wrapper">
+        <nav class="navigacija">
+            <a href="projekt.html" class="logoMali"><img src="img/logo.PNG" alt="Minimal Chic mali logo" /></a>
+            
+            <div class="hamburger" id="hamburger" onclick="animiraj(this)">
+                <div class="ham1"></div>
+                <div class="ham2"></div>
+                <div class="ham3"></div>
+            </div>
+            
+            <ul class="navUL" id="navigacija">
+                <li><a href="#" class="tranzicijaNav">NJEGA LICA</a></li>
+                <li><a href="#" class="tranzicijaNav">NJEGA TIJELA</a></li>
+                <li><a href="#" class="tranzicijaNav">SETOVI</a></li>
+                <li><a href="#" class="tranzicijaNav"><span class="kosarica">KOŠARICA</span> <i class="icon-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        </div>
+    </section>
+
+    <section class="container kontakt">
+        <div class="row">
+            <div class="col-xl-12 kontaktH">
+                <h2>KONTAKTIRAJTE NAS PUTEM</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <p class="poboldano">Minimal Chic</p>
+                <p>Milana Makanca</p>
+                <p>10000 Zagreb, Hrvatska</p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <p class="poboldano">Telefon</p>
+                <p>091 466 4272</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12 kontaktH">
+                <p class="poboldano">Obrazac za kontakt</p>
+            </div>
+        </div>
+        <hr />
+        <form>
+            <label><span class="crveno">*</span>Vaše ime</label>
+            <input type="text" /><br />
+            <label><span class="crveno">*</span>E-mail adresa</label>
+            <input type="email" />
+            <p class="poravnaj">
+                <label><span class="crveno">*</span>Vaš upit</label>
+                <textarea rows="10"></textarea>
+            </p>
+            <p class="obaveznaPolja">Polja označena sa <span class="crveno">*</span> su obavezna</p>
+            <div class="prikaziVise"><a href="#"><div class="gumb tranzicija">POŠALJI</div></a></div>
+        </form>
+    </section>
+
+    <footer>
+    <div class="wrapper">
+        <ul>
+            <li><a href="#">O NAMA</a></li>
+            <li><a href="#">DOSTAVA</a></li>
+            <li><a href="#">NAČINI PLAĆANJA</a></li>
+            <li><a href="#">POVRAT PROIZVODA</a></li>
+            <li><a href="#">KONTAKT</a></li>
+            <li><a href="https://www.facebook.com/minimalsik/">Prati nas <i class="icon-facebook-logo"></i></a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    </footer>
+    
+    <script>
+        var hamburger = document.getElementById("hamburger");
+        var navigacija = document.getElementById("navigacija");
+
+        hamburger.addEventListener("click", () => {
+            navigacija.classList.toggle("pokazi");
+        });
+
+        function animiraj(a) {
+            a.classList.toggle("animacija");
+        }
+    </script>
+</body>
+
+</html>

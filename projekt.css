@@ -1,0 +1,681 @@
+/*Web font, lokalne ikone*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?7m8016');
+    src:  url('fonts/icomoon.eot?7m8016#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?7m8016') format('truetype'),
+      url('fonts/icomoon.woff?7m8016') format('woff'),
+      url('fonts/icomoon.svg?7m8016#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+  
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook-logo:before {
+    content: "\e900";
+    color: #4267B2;
+}
+.icon-shopping-basket:before {
+    content: "\e901";
+}
+.icon-shopping-cart:before {
+    content: "\e902";
+}
+
+@font-face {
+    font-family: 'amatic_scregular';
+    src: url('fonts/amaticsc-webfont.eot');
+    src: url('fonts/amaticsc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/amaticsc-webfont.woff2') format('woff2'),
+         url('fonts/amaticsc-webfont.woff') format('woff'),
+         url('fonts/amaticsc-webfont.ttf') format('truetype'),
+         url('fonts/amaticsc-webfont.svg#amatic_scregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'josefin_sansregular';
+    src: url('fonts/josefinsans-regular-webfont.eot');
+    src: url('fonts/josefinsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/josefinsans-regular-webfont.woff2') format('woff2'),
+         url('fonts/josefinsans-regular-webfont.woff') format('woff'),
+         url('fonts/josefinsans-regular-webfont.ttf') format('truetype'),
+         url('fonts/josefinsans-regular-webfont.svg#josefin_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'josefin_sanslight';
+    src: url('fonts/josefinsans-light-webfont.eot');
+    src: url('fonts/josefinsans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/josefinsans-light-webfont.woff2') format('woff2'),
+         url('fonts/josefinsans-light-webfont.woff') format('woff'),
+         url('fonts/josefinsans-light-webfont.ttf') format('truetype'),
+         url('fonts/josefinsans-light-webfont.svg#josefin_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*HTML, body*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: josefin_sanslight;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/*Opcenite klase*/
+img {
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.poboldano {
+    font-weight: bold;
+}
+
+.crveno {
+    color: red;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-top: 1px solid #231F20;
+}
+
+/*Velicina fonta*/
+h1, h2, h3, h4, h5 {
+    font-family: amatic_scregular; 
+    line-height: 35px;
+}
+
+h1 {
+    font-size: 3.052rem;
+}
+
+h2 {
+    font-size: 2.441rem;
+}
+
+h3 {
+    font-size: 1.953rem;
+}
+
+h4 {
+    font-size: 1.563rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+nav {
+    font-size: 2rem;
+}
+
+footer {
+    font-family: amatic_scregular;
+    font-size: 1.7rem;
+}
+
+div {
+    font-family: josefin_sanslight;
+}
+
+.kontakt {
+    font-size: 1.15rem;
+}
+
+/*Slike*/
+.uvecaj {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    /*-webkit-mask-image: -webkit-radial-gradient(square , white, black);
+    -moz-mask-image: -moz-radial-gradient(square, white, black);*/
+    border-radius: 10px;
+}
+
+.uvecaj img {
+    border-radius: 10px;
+    vertical-align: middle;
+    transition: transform .5s ease;
+}
+
+.uvecaj:hover img {
+    transform: scale(1.2);
+}
+
+/*Margine*/
+.topH {
+    margin-top: 35px;
+}
+
+.kontaktH {
+    margin-top: 35px;
+}
+
+.nazivProizvoda {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.cijenaProizvoda {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.uKosaricu {
+    width: 150px;
+    height: 40px;
+    float: none;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.prikaziVise {
+    width: 220px;
+    height: 40px;
+    float: none;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.bottomPrikazi {
+    margin-bottom: 150px;
+}
+
+/*Gumbovi*/
+.gumb {
+    height: 40px;
+    width: 220px;
+    background-color: #C40781;
+    text-align: center;
+    border-radius: 4%;
+    line-height: 48px; /*210%*/
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: josefin_sanslight;
+    float: none;
+    margin: 0 auto;
+}
+
+div.prikaziVise a {
+    text-decoration: none;
+    color: #231F20;
+}
+
+div.prikaziVise a:hover, a:active {
+    color: #C40781;
+}
+
+a:hover .gumb {
+    background-color: #231F20;
+    font-weight: bolder;
+}
+
+.gumbUKosaricu {
+    height: 40px;
+    width: 150px;
+    font-family: josefin_sanslight;
+    background-color: #231F20;
+    text-align: center;
+    border-radius: 4%;
+    line-height: 48px; /*260%*/
+    font-weight: bold;
+    float: none;
+    margin: 0 auto;
+}
+
+div.uKosaricu a {
+    text-decoration: none;
+    color: #C40781;
+}
+
+div.uKosaricu a:hover, a:active {
+    color: #231F20;
+}
+
+a:hover .gumbUKosaricu {
+    background-color: #C40781;
+    font-weight: bolder;
+}
+
+/*Linkovi*/
+.topH a {
+    text-decoration: none;
+    color: #231F20;
+}
+
+.topH a:visited {
+    color: #231F20;
+}
+
+.ostaliH a {
+    text-decoration: none;
+    color: #231F20;
+}
+
+.ostaliH a:visited {
+    color: #231F20;
+}
+
+div.nazivProizvoda a {
+    text-decoration: none;
+    color: #231F20;
+}
+
+div.cijenaProizvoda a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #231F20;
+}
+
+/*Forma*/
+label {
+    display: inline-block;
+    text-align: right;
+    width: 150px;
+}
+
+input {
+    padding: 7px;
+    border-radius: 10px;
+    width: 55%;
+    border: 1px solid #231F20;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+}
+
+input:focus {
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.09);
+}
+
+textarea {
+    border-radius: 10px;
+    width: 55%;
+    border: 1px solid #231F20;
+    margin-left: 20px;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    resize: none;
+    padding: 7px 7px;
+}
+
+textarea:focus {
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.09);
+}
+
+.poravnaj * {
+    vertical-align: top;
+}
+
+.obaveznaPolja {
+    margin-top: 40px;
+}
+
+/*Tranzicije*/
+.tranzicija {
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;  
+}
+
+.tranzicijaNav {
+    transition-duration: 160ms;
+    transition-timing-function: linear; 
+}
+
+/*Navigacija*/
+.hamburger {
+    display: none;
+}
+
+.navigacija {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navUL {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navUL li {
+    flex: 3;
+}
+
+.navUL li a:link, a:visited {
+    display: inline-block;
+    height: 50px;
+    line-height: 56px; /*150%*/
+    text-decoration: none;
+    color: #C40781;
+    text-align: center;
+    border-radius: 100px;
+    width: 100%;
+    
+}
+
+.navUL li a:hover {
+    background: #C40781;
+    color: #231F20;
+    font-weight: bold;
+}
+
+/*Logo*/
+.pozadinaLogo {
+    margin: 0 0;
+    width: 100%;
+    background: url("img/lavander.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-top: 70px;
+}
+
+.logoCentriran {
+    height: 350px;
+    text-align: center;
+}
+
+.logoMali {
+    display: none;
+}
+
+/*Podnozje*/
+footer li {
+    float: left;
+    width: 16.66%;
+}
+
+footer ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+footer li a:link, a:visited {
+    font-family: amatic_scregular;
+    display: block;
+    height: 75px;
+    text-decoration: none;
+    line-height: 80px; /*250%*/
+    color: #C40781;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer li a:active {
+    color: #231F20;
+    border-radius: 100px;
+    border: 2px dotted #C40781;
+}
+
+@media (max-width: 991px) {
+    .uKosaricu {
+        margin-bottom: 28px;
+    }
+    .prikaziVise {
+        margin-top: 30px;
+    }
+}
+
+/*Navigacija - manja velicina fonta*/
+@media (max-width: 960px) {
+    nav {
+        font-size: 1.8rem;
+    }
+}
+
+/*Responzivnost podnozja*/
+@media (max-width: 937px) {
+    footer li {
+        width: 100%;
+        clear: both;       
+    }
+
+    footer li a:link, a:visited {
+        border: none;
+    }  
+}
+
+/*Tablet stranica*/
+@media (max-width: 865px) {
+    /*Velicina fonta - responzivna*/
+    html {
+        font-size: 16px;
+    }
+
+    .gumb {
+        font-size: 1.2rem;
+    }
+
+    .gumbUKosaricu {
+        line-height: 44px; /*273%*/
+    }
+
+    /*Navigacija - responzivna*/
+    .navUL {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navUL.pokazi {
+        display: flex;
+    }
+
+    .navUL li a:hover {
+        font-weight: normal;
+    }
+    
+    /*Hamburger meni*/
+    .hamburger {
+        margin-left: calc(100% - 55px);
+        display: inline-block;
+        align-content: center;
+        width: 50px;
+        height: 50px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .ham1, .ham2, .ham3 {
+        width: 40px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #C40781;
+        padding: 3px;
+        margin-left: 4px;
+        margin-right: 4px;
+        transition: 0.4s;
+    }
+
+    .ham1 {
+        margin-top: 11px;
+        margin-bottom: 5px; 
+    }
+
+    .ham3 {
+        margin-top: 5px;
+    }
+
+    /*Animirani hamburger meni*/
+    .animacija .ham1 {
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .animacija .ham2 {
+        opacity: 0;
+    }
+
+    .animacija .ham3 {
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    /*Logo tablet*/
+    .pozadinaLogo img {
+        width: 130px;
+        height: 130px;        
+    }
+
+    .logo {
+        margin-top: 90px;
+    }
+    
+    .logoCentriran {
+        height: 300px;
+    }
+
+    /*Margine*/
+    .topH {
+        margin-top: 20px;
+    }
+
+    .kontaktH {
+        margin-top: 20px;
+    }
+
+    .uKosaricu {
+        margin-top: 12px;
+        margin-bottom : 28px;
+    }
+    
+    .prikaziVise {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+    footer li a:link, a:visited {
+        line-height: 75px; /*292%*/
+    }
+
+    /*Linkovi - hover*/    
+    div.prikaziVise a:hover, a:active {
+        color: #231F20;
+    }
+    
+    a:hover .gumb {
+        background-color: #C40781;
+    }
+    
+    div.uKosaricu a:hover, a:active {
+        color: #C40781;
+    }
+    
+    a:hover .gumbUKosaricu {
+        background-color: #231F20;
+    }
+
+    .uvecaj img {
+        transition: none;
+    }
+
+    .uvecaj:hover img {
+        transform: none;
+    }
+}
+
+@media (max-width: 575px) {    
+    .prikaziVise {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+/*Forma - responzivnost*/
+@media (max-width: 420px) {
+    input {
+        width: 90%;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    label {
+        text-align: left;
+        margin-left: 19px;
+        margin-bottom: 5px;
+    }
+}
+
+/*Mobilna stranica*/
+@media (max-width: 400px) {
+    /*Logo mobilni*/
+    .logoMali {
+        display: inline;
+        margin-left: 11px;
+    }
+
+    .pozadinaLogo {
+        display: none;
+    }
+
+    /*Margine*/
+    .topH {
+        margin-top: 15px;
+    }
+    
+    .nazivProizvoda {
+        margin-top: 13px;  
+    }
+
+    /*Hamburger meni*/
+    .hamburger {
+        margin-left: calc(100% - 55px - 179px);
+    }
+}
